@@ -1,0 +1,230 @@
+<main id="main" class="main-site">
+	<form action="" method="post" class="checkout woocommerce-checkout" enctype="multipart/form-data">
+		<div id="customer_details">
+
+			<!--Billing details-->
+			<div class="col-md-1">
+				<div class="woocommerce-billing-fields">
+					<h3>Billing details</h3>
+					<div class="woocommerce-billing-fields__field-wrapper">
+						<p class="form-row form-row-first validate-required woocommerce-invalid woocommerce-invalid-required-field" id="billing_first_name_field">
+							<label for="billing_first_name" class="">First name <abbr class="required" title="required">*</abbr></label>
+							<input type="text" class="input-text " name="billing_first_name" id="billing_first_name" placeholder="" value="">
+						</p>
+
+						<p id="billing_last_name_field" class="form-row form-row-last validate-required">
+							<label for="billing_last_name" class="">Last name <abbr class="required" title="required">*</abbr></label>
+							<input type="text" class="input-text " name="billing_last_name" id="billing_last_name" placeholder="" value="">
+						</p>
+
+						<p class="form-row form-row-wide" id="billing_company_field">
+							<label for="billing_company" class="">Company name</label>
+							<input type="text" class="input-text " name="billing_company" id="billing_company" placeholder="" value="">
+						</p>
+
+						<p class="form-row form-row-wide address-field update_totals_on_change validate-required woocommerce-validated" id="billing_country_field">
+							<label for="billing_country" class="">Country <abbr class="required" title="required">*</abbr></label>
+							<select name="billing_country" id="billing_country" class="country_to_state country_select select2-hidden-accessible">
+								<option value="">Select a country…</option>
+								<option value="AX">Åland Islands</option>
+							</select>
+
+							<span class="select">
+								<span class="selection">
+									<span class="select-selection select-selection--single">
+										<span class="select2-selection__rendered" id="select2-billing_country-container" title="">United Kingdom (UK)</span>
+										<span class="select-selection__arrow"></span>
+									</span>
+								</span>
+								<span class="dropdown-wrapper"></span>
+							</span>
+						</p>
+
+						<p class="form-row form-row-wide address-field validate-required" id="billing_address_1_field">
+							<label for="billing_address_1" class="">Street address 
+								<abbr class="required" title="required">*</abbr>
+							</label>
+							<input type="text" class="input-text " name="billing_address_1" id="billing_address_1" placeholder="House number and street name">
+						</p>
+
+						<p class="form-row form-row-wide address-field" id="billing_address_2_field">
+							<input type="text" class="input-text " name="billing_address_2" id="billing_address_2" placeholder="Apartment, suite, unit etc. (optional)">
+						</p>
+					</div>
+				</div>
+				<div class="woocommerce-account-fields"></div>
+			</div>
+
+			<!--Shipping-->
+			<div class="col-2">
+				<div class="woocommerce-shipping-fields">
+
+					<h3 id="ship-to-different-address">
+						<label for="ship-to-different-address-checkbox" class="checkbox">Ship to a different address?</label>
+						<input id="ship-to-different-address-checkbox" class="input-checkbox" checked="checked" type="checkbox" name="ship_to_different_address" value="1">
+					</h3>
+
+					<div class="shipping_address" style="display: block;">
+
+						<p class="form-row form-row-wide address-field update_totals_on_change validate-required woocommerce-validated" id="shipping_country_field">
+							<label for="shipping_country" class="">Country <abbr class="required" title="required">*</abbr></label>
+							<select name="shipping_country" id="shipping_country" class="country_to_state country_select" style="display: none;">
+								<option value="">Select a country…</option>
+								<option value="AX">Åland Islands</option>
+								<option value="AF">Afghanistan</option>
+								<option value="AL">Albania</option>
+								<option value="DZ">Algeria</option>
+							</select>
+						<div class="chosen-container chosen-container-single" style="width: 1164px;" title="" id="shipping_country_chosen">
+						<a class="chosen-single" tabindex="-1"><span>United Kingdom (UK)</span><div><b></b></div></a>
+						<div class="chosen-drop"><div class="chosen-search">
+							<input type="text" autocomplete="off">
+						</div>
+							<ul class="chosen-results">
+								<li class="active-result" style="" data-option-array-index="0">Select a country…</li>
+								<li class="active-result" style="" data-option-array-index="1">Åland Islands</li>
+								<li class="active-result" style="" data-option-array-index="2">Afghanistan</li>
+								<li class="active-result" style="" data-option-array-index="3">Albania</li>
+								<li class="active-result" style="" data-option-array-index="4">Algeria</li>
+								<li class="active-result" style="" data-option-array-index="5">Andorra</li>
+								<li class="active-result" style="" data-option-array-index="6">Angola</li>
+								<li class="active-result" style="" data-option-array-index="7">Anguilla</li>
+								<li class="active-result" style="" data-option-array-index="8">Antarctica</li>
+							</ul></div></div><noscript>&lt;input type="submit" name="woocommerce_checkout_update_totals" value="Update country" /&gt;</noscript></p>
+
+						<p class="form-row form-row-first validate-required woocommerce-invalid woocommerce-invalid-required-field" id="shipping_first_name_field">
+							<label for="shipping_first_name" class="">First Name <abbr class="required" title="required">*</abbr></label>
+							<input type="text" class="input-text " name="shipping_first_name" id="shipping_first_name" placeholder="" value="">
+						</p>
+
+						<p class="form-row form-row-last validate-required" id="shipping_last_name_field">
+							<label for="shipping_last_name" class="">Last Name <abbr class="required" title="required">*</abbr></label>
+							<input type="text" class="input-text " name="shipping_last_name" id="shipping_last_name" placeholder="" value="">
+						</p>
+						<div class="clear"></div>
+
+						<p class="form-row form-row-wide" id="shipping_company_field">
+							<label for="shipping_company" class="">Company Name</label>
+							<input type="text" class="input-text " name="shipping_company" id="shipping_company" placeholder="" value="">
+						</p>
+
+						<p class="form-row form-row-wide address-field validate-required" id="shipping_address_1_field">
+							<label for="shipping_address_1" class="">Address <abbr class="required" title="required">*</abbr></label>
+							<input type="text" class="input-text " name="shipping_address_1" id="shipping_address_1" placeholder="Street address" value="">
+						</p>
+
+						<p class="form-row form-row-wide address-field" id="shipping_address_2_field">
+							<input type="text" class="input-text " name="shipping_address_2" id="shipping_address_2" placeholder="Apartment, suite, unit etc. (optional)" value="">
+						</p>
+
+						<p class="form-row form-row-wide address-field validate-required" id="shipping_city_field" data-o_class="form-row form-row-wide address-field validate-required">
+							<label for="shipping_city" class="">Town / City <abbr class="required" title="required">*</abbr></label>
+							<input type="text" class="input-text " name="shipping_city" id="shipping_city" placeholder="Town / City" value="">
+						</p>
+
+						<p class="form-row form-row-first address-field validate-state" id="shipping_state_field" data-o_class="form-row form-row-first address-field validate-state">
+							<label for="shipping_state" class="">County</label>
+							<input type="text" class="input-text " value="" placeholder="State / County" name="shipping_state" id="shipping_state">
+						</p>
+						<p class="form-row form-row-last address-field validate-required validate-postcode" id="shipping_postcode_field" data-o_class="form-row form-row-last address-field validate-required validate-postcode">
+							<label for="shipping_postcode" class="">Postcode <abbr class="required" title="required">*</abbr></label>
+							<input type="text" class="input-text " name="shipping_postcode" id="shipping_postcode" placeholder="Postcode / Zip" value="">
+						</p>
+
+						<div class="clear"></div>
+
+					</div>
+
+					<p class="form-row notes" id="order_comments_field">
+						<label for="order_comments" class="">Order Notes</label>
+						<textarea name="order_comments" class="input-text " id="order_comments" placeholder="Notes about your order, e.g. special notes for delivery." rows="2" cols="5"></textarea>
+					</p>
+
+				</div>
+			</div>
+		</div>
+
+		<!--Your Order-->
+		<h3 id="order_review_heading">Your order</h3>
+		<table class="shop_table woocommerce-checkout-review-order-table">
+			<thead>
+				<tr>
+					<th class="product-name">Product</th>
+					<th class="product-total">Total</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr class="cart_item">
+					<td class="product-name">Bracelet
+						<strong class="product-quantity">× 1</strong>													
+					</td>
+					<td class="product-total">
+						<span class="woocommerce-Price-amount amount">
+						<span class="woocommerce-Price-currencySymbol">£</span>15.00</span>						
+					</td>
+				</tr>
+			</tbody>
+
+			<tfoot>
+				<tr class="cart-subtotal">
+					<th>Subtotal</th>
+					<td>
+						<span class="woocommerce-Price-amount amount">
+						<span class="woocommerce-Price-currencySymbol">£</span>15.00</span>
+					</td>
+				</tr>	
+				<tr class="order-total">
+					<th>Total</th>
+					<td>
+						<strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">£</span>15.00</span></strong> 
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+
+
+		<!--Check Payment-->
+		<div id="payment" class="woocommerce-checkout-payment">
+			<ul class="wc_payment_methods payment_methods methods">
+				<li class="wc_payment_method payment_method_cheque">
+					<input id="payment_method_cheque" type="radio" class="input-radio" name="payment_method" value="cheque" checked="checked">
+
+					<label for="payment_method_cheque">
+						Check payments 	
+					</label>
+					<div class="payment_box payment_method_cheque">
+						<p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+					</div>
+				</li>
+
+				<li class="wc_payment_method payment_method_paypal">
+					<input id="payment_method_paypal" type="radio" class="input-radio" name="payment_method" value="paypal">
+
+					<label for="payment_method_paypal">PayPal 
+						<img src="" alt="PayPal acceptance mark"><a href="">What is PayPal?</a>	
+					</label>
+
+					<div class="payment_box payment_method_paypal">
+						<p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+					</div>
+				</li>
+			</ul>
+
+			<div class="form-row place-order">
+				<p class="form-row terms wc-terms-and-conditions woocommerce-validated">
+					<label class="woocommerce-form__label woocommerce-form__label-for-checkbox checkbox">
+						<input type="checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" name="terms" id="terms"> 
+						<span>I’ve read and accept the 
+						<a href="" class="woocommerce-terms-and-conditions-link">conditions</a>
+						</span> <span class="required">*</span>
+					</label>
+					<input type="hidden" name="terms-field" value="1">
+				</p>
+
+				<input type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="Place order">
+			</div>
+		</div>
+
+	</form>
+</main>
